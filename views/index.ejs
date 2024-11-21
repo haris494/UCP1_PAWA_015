@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hewan</title>
+    <!-- Link ke file CSS jika ada -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Daftar Hewan</h1>
+    <ul>
+        <% animals.forEach(function(animal) { %>
+            <li><%= animal.name %> - <%= animal.species %> - Umur: <%= animal.age %> tahun</li>
+        <% }); %>
+    </ul>
+</body>
+</html>
